@@ -41,7 +41,7 @@ max_row = min(ws1.max_row, ws2.max_row)
 number_of_differences = 0
 
 
-for i in range (header_row + 1, ws1.max_row - 1):
+for i in range (header_row + 1, max_row - 1):
     for j in range (1, ws1.max_column):
         if ws1.cell(i, j).value != ws2.cell(i, j).value:
             number_of_differences += 1
