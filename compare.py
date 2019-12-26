@@ -37,7 +37,9 @@ if ws1.max_row != ws2.max_row:
     print('Number of rows does not match!')
 
 header_row = 6
+max_row = min(ws1.max_row, ws2.max_row)
 number_of_differences = 0
+
 
 for i in range (header_row + 1, ws1.max_row - 1):
     for j in range (1, ws1.max_column):
