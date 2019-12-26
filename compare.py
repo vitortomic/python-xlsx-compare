@@ -57,3 +57,8 @@ if number_of_differences > 0:
     wb2.save(filename = f'./second/{second_file_name}')
 else:
     print('No differences between spreadsheets.')
+
+def stogod():
+  return 5
+
+print(stogod())
