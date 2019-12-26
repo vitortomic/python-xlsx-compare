@@ -5,4 +5,5 @@ script will paint cells with differences red
 set header_row to the the header row in your xlsx files
 
 pip install openpyxl
+
 python compare.py
