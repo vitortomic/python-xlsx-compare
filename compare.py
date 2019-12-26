@@ -6,8 +6,8 @@ red_fill = PatternFill(start_color='FFFF0000',
                    end_color='FFFF0000',
                    fill_type='solid')
 
-first_dir = os.listdir('./first')
-second_dir = os.listdir('./second')
+first_dir = list(filter(lambda filename: filename.endswith('.xlsx'), os.listdir('./first')))
+second_dir = list(filter(lambda filename: filename.endswith('.xlsx'), os.listdir('./second')))
 
 if len(first_dir) < 1 or len(second_dir) < 1:
     raise Exception('Missing files!')
