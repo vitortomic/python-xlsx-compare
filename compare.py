@@ -34,7 +34,7 @@ if ws1.max_column != ws2.max_column:
     raise Exception('Number of columns does not match!')
 
 if ws1.max_row != ws2.max_row:
-    raise Exception('Number of columns does not match!')
+    print('Number of rows does not match!')
 
 header_row = 6
 number_of_differences = 0
